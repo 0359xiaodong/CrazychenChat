@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="color_bottom_text_normal">#9da0a4</color>
+     <color name="color_bottom_text_press">#4f9ef6</color>
+     <color name="base_color_text_white">#ffffff</color>
+     <color name="dialog_color_title">#f82c22</color>
+     <color name="base_color_text_gray">#9fa0a0</color>
+     <color name="base_color_text_black">#3e3e39</color>
+     <color name="black_color">#000000</color>
+</resources>

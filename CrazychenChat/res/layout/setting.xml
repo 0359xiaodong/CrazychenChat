@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/layout_all"    
+    android:focusable="true"
+    android:focusableInTouchMode="true" 
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/head1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/title_bar" >
+		 <Button 
+            android:id="@+id/back"
+		    android:layout_width="67dp" 
+       		android:layout_height="wrap_content"
+       		android:layout_alignParentLeft="true" 
+       		android:layout_centerVertical="true"
+       		android:layout_marginLeft="5dp"
+       		android:text="返回"
+       		android:textColor="#fff"
+       		android:textSize="15dp"
+			android:background="@drawable/title_btn_right"
+			    />            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />     
+         <Button 
+            android:id="@+id/save"
+		    android:layout_width="67dp" 
+       		android:layout_height="wrap_content"
+       		android:layout_alignParentRight="true" 
+       		android:layout_centerVertical="true"
+       		android:layout_marginRight="5dp"
+       		android:text="保存"
+       		android:textColor="#fff"
+       		android:textSize="15dp"
+			android:background="@drawable/title_btn_right"
+			    />            
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@id/head1" >
+
+	    <RelativeLayout
+	        android:id="@+id/img_other"
+	        android:layout_width="fill_parent"
+	        android:layout_height="120dip"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/ic_preference_single_normal"
+	        android:clickable="true"
+	        android:orientation="horizontal" >
+
+	        <TextView	           
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dip"
+	            android:text="对方头像:"
+	            android:textColor="#404040"
+	            android:textSize="18sp" />
+
+	        <ImageView
+	            android:id="@+id/otherimg"
+	            android:layout_width="100dp"
+	            android:layout_height="100dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/head" />
+	    </RelativeLayout>
+
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="60dp"
+	        android:layout_marginTop="150dp"
+	        android:background="@drawable/ic_preference_single_normal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dip"
+	            android:text="对方名字:"
+	            android:textColor="#404040"
+	            android:textSize="18sp" />
+
+	        <EditText	            
+	            android:id="@+id/edit_other"
+	            android:maxLength="10"
+	            android:layout_width="180dp"
+	            android:layout_height="50dp"	           
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:singleLine="true" />
+	    </RelativeLayout>
+
+	    <RelativeLayout
+	        android:id="@+id/img_my"
+	        android:layout_width="fill_parent"
+	        android:layout_height="120dip"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/relativeLayout1"
+	        android:layout_marginTop="225dp"
+	        android:background="@drawable/ic_preference_single_normal"
+	        android:clickable="true"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dip"
+	            android:text="我的头像:"
+	            android:textColor="#404040"
+	            android:textSize="18sp" />
+
+	        <ImageView
+	            android:id="@+id/myimg"
+	            android:layout_width="100dp"
+	            android:layout_height="100dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/my" />
+	    </RelativeLayout>
+	
+	     <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="60dp"
+	        android:layout_marginTop="360dp"
+	        android:background="@drawable/ic_preference_single_normal" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dip"
+	            android:text="我的名字:"
+	            android:textColor="#404040"
+	            android:textSize="18sp" />
+
+	        <EditText
+	            android:id="@+id/edit_my"
+	            android:maxLength="10"
+	            android:layout_width="180dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:singleLine="true" />
+	    </RelativeLayout>
+	</RelativeLayout>
+
+</RelativeLayout>

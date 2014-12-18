@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:clickable="true"  
+    android:gravity="center_horizontal"         
+    android:orientation="vertical" >  
+<RelativeLayout 
+    android:clickable="true"  
+    android:id="@+id/traceroute_rootview"   
+    android:background="#ffffff"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/title_bar" >
+		<Button 
+            android:id="@+id/about"
+		    android:layout_width="67dp" 
+       		android:layout_height="wrap_content"
+       		android:layout_alignParentLeft="true" 
+       		android:layout_centerVertical="true"
+       		android:layout_marginLeft="5dp"
+       		android:text="关于"
+       		android:textColor="#fff"
+       		android:textSize="15dp"
+			android:background="@drawable/title_btn_right"
+			    />          
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="小昕"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button 
+            android:id="@+id/setting"
+		    android:layout_width="67dp" 
+       		android:layout_height="wrap_content"
+       		android:layout_alignParentRight="true" 
+       		android:layout_centerVertical="true"
+       		android:layout_marginRight="5dp"
+       		android:text="设置"
+       		android:textColor="#fff"
+       		android:textSize="15dp"
+			android:background="@drawable/title_btn_right"
+			    />      
+             
+    </RelativeLayout>
+
+   
+     <RelativeLayout
+        android:id="@+id/foot"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar"   
+        android:focusable="true"  
+   		android:focusableInTouchMode="true"     >           
+       <Button
+           android:id="@+id/send_btn"
+           android:layout_width="60dp"
+           android:layout_height="40dp"
+           android:layout_marginRight="10dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/chat_send_btn"
+           android:onClick="sendMsg"
+           android:text="发送"
+           />
+      <EditText
+            android:id="@+id/chat_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/send_btn"
+            android:background="@drawable/login_edit_normal"
+            android:singleLine="true"         
+            android:textSize="18sp" />
+     
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:layout_below="@id/head" 
+        android:layout_above="@id/foot"   
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:layout_centerVertical="true" >
+        <ListView
+            android:id="@+id/chatlist"        
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#0000"
+	        android:divider="@null"
+	        android:dividerHeight="5dp"
+	        android:scrollbarStyle="outsideOverlay" >           
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>

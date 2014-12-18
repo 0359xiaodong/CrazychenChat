@@ -1,0 +1,65 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+   
+
+    <!-- Application theme. -->
+   
+	  <!-- 字体样式 start -->
+    <style name="chat_date_style">
+        <item name="android:textColor">#F5F5F5</item>
+        <item name="android:background">#BEBDBE</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    
+    <style name="Smile">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Smile.TextView">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Smile.View_margin">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="Smile.ImageView">
+        <item name="android:contentDescription">@string/app_name</item>
+    </style>
+
+    <style name="Smile.ImageView.Photo_Large">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="Smile.ImageView.Photo_Middle">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="Smile.ImageView.Photo_Small">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>   
+
+    <style name="Smile.TextView._Black">
+        <item name="android:textColor">@color/base_color_text_black</item>
+    </style>
+    
+    <style name="Animations" />
+
+    <style name="Animations.GrowFromBottom">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+</resources>
